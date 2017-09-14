@@ -28,5 +28,5 @@ public class TestHelloWorld {
     String[] test2 = Main.fizzbuzz(7);
     String[] restult = new String [] {"1", "2", "fizz", "4", "buzz", "fizz", "7"};
     assertArrayEquals(test2, restult);
-  }
+  } 
 }
