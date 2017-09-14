@@ -1,8 +1,6 @@
 package hw;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -15,18 +13,18 @@ public class Main {
     Main.fizzbuzz(n);
   }
 
-  public static List<String> fizzbuzz(int n) {
+  public static String[] fizzbuzz(int n) {
     if (n >= 1) {
-      List<String> list = new ArrayList<String>();
+      String[] list = new String[n+1];
       for (int i = 1; i <= n; i++) {
         if ((i % 3 == 0) && (i % 5 == 0)) {
-          list.add("fizz buzz");
+          list[i] = "fizz buzz";
         } else if (i % 5 == 0) {
-          list.add("buzz");
+          list[i] = "buzz";
         } else if (i % 3 == 0) {
-          list.add("fizz");
+          list[i] = "fizz";
         } else {
-          list.add(String.valueOf(i));
+          list[i] = String.valueOf(i);
         }
       }
       return list;
